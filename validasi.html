@@ -1,0 +1,25 @@
+<script>
+    function isAcceptedUsername(username) {
+        var Regex = /[a-z]{5,9}$/;
+        return Regex.test(username);
+    }
+
+    if (isAcceptedUsername("aaaaaa")) {
+        alert("Username Is Valid");
+    } else {
+        alert("Username Is Invalid");
+    }
+</script>
+
+<script>
+    function isAcceptedUsername(password) {
+        var Regex = /[a-z]{0,8}$/;
+        return Regex.test(password);
+    }
+
+    if (isAcceptedUsername("aaaaajjjjjaaa")) {
+        alert("Password Is Valid");
+    } else {
+        alert("Password Is Invalid");
+    }
+</script>
